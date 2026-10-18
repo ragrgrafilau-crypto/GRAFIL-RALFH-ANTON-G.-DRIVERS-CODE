@@ -5,16 +5,16 @@ food = float(input("how much is your food? "))
 hotel = float(input("how much per night in your hotel? "))
 night = int(input("how many nights? "))
 
-total = budget - ride - food
+total = ride + food
 other_total = hotel * night
-remaining = total + other_total
+remaining = budget - total - other_total
 
 print("")
-print("your budget is: ", budget)
-print("your ride is: ", ride)
-print("your food is: ", food)
+print("your budget is: ", Budget)
+print("your ride is: ", Ride)
+print("your food is: ", Food)
 print("your hotel per night is: ", hotel)
 print("your hotel nights is: ", night)
 print("your hotel total is: ", other_total)
-print("your total in hotel is: ", budget - other_total - total)
+print("your total in hotel is: ", total + other_total)
 print("your total is: ", remaining)
